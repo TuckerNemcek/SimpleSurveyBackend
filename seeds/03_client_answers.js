@@ -5,9 +5,8 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('client_answers').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+        {clientID: 1, questionID: 1,answer: '10'},
+
       ])
       .then(() => {
         return knex.raw("SELECT setval('client_answers_id_seq', (SELECT MAX(id) FROM client_answers))")
