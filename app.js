@@ -4,12 +4,23 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var app = express()
+
+var cors = require('cors')
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET,POST,DELETE,PATCH,PUT");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+
 
 var questionsRouter = require('./routes/questions');
 var clientRouter = require('./routes/client');
 var client_answersRouter = require('./routes/client_answers');
 
-var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
