@@ -7,7 +7,13 @@ var express = require('express');
 var router = express.Router();
 
 
-router.post('/', (req, res) => {
+router.post('/', (req, res, next) => {
+  if(!req.answer){
+    next({
+      status: 400,
+      message: "must include an answer"
+    })
+  }
   return knex('client_answers')
   .insert({
     questionID: 1,
