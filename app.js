@@ -20,6 +20,7 @@ app.use(function(req, res, next) {
 var questionsRouter = require('./routes/questions');
 var clientRouter = require('./routes/client');
 var client_answersRouter = require('./routes/client_answers');
+//var client_mc_answersRouter = require('./routes/client_mc_answers');
 
 
 // view engine setup
@@ -35,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/questions', questionsRouter);
 app.use('/client', clientRouter);
 app.use('/client_answers', client_answersRouter);
+//app.use('/client_mc_answers', client_mc_answersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
