@@ -4,11 +4,16 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('client_mc_answers').insert([
-        {id: 1, questionID: 1,mc_answers:"A"},
-        {id: 2, questionID: 1,mc_answers:"B"},
-        {id: 3, questionID: 1,mc_answers:"C"},
-        {id: 4, questionID: 1,mc_answers:"D"},
-        {id: 5, questionID: 1,mc_answers:"E"},
+        {id: 1, questionID: 8,mc_answers:"Idea"},
+        {id: 2, questionID: 8,mc_answers:"Launch"},
+        {id: 3, questionID: 8,mc_answers:"Growth"},
+        {id: 4, questionID: 8,mc_answers:"Shake Out"},
+        {id: 5, questionID: 8,mc_answers:"Maturity"},
+
+        {id: 6, questionID: 9,mc_answers:"Consumer Packaged Goods (CPG)"},
+        {id: 7, questionID: 9,mc_answers:"Software as a Service (SaaS)"},
+        {id: 8, questionID: 9,mc_answers:"Professional Services"},
+
 
       ])
       .then(() => {
