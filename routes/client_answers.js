@@ -18,6 +18,16 @@ router.post('/', (req, res) => {
   })
 })
 
+
+/// NEW
+router.get('/', (req, res, next) => {
+  return knex('client_answers')
+  .returning('*')
+  .then((answers) => {
+
+    res.status(200).json(answers)
+  })
+})
 ///THIS IS NEW NOT SURE IF IT WORKS
 // router.get('/:id', (req, res) => {
 //   const id = (req.params.id)

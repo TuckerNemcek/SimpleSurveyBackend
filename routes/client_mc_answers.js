@@ -6,7 +6,6 @@ var express = require('express');
 
 var router = express.Router();
 
-
 router.post('/', (req, res, next) => {
   if(!req.answer){
     next({
@@ -24,7 +23,5 @@ router.post('/', (req, res, next) => {
     res.status(200).json(ins)
   })
 })
-
-
 
 module.exports = router;
