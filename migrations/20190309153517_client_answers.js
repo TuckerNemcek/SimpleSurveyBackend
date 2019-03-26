@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.string('client_email')
     table.timestamp('created_at').defaultTo(knex.fn.now())
     table.integer('questionID').references("id").inTable('questions').onDelete("CASCADE")
-    table.string('answer')
+    table.string('answer').defaultTo('')
   })
 }
 
