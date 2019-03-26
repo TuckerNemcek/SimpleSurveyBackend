@@ -9,7 +9,6 @@ var router = express.Router();
 
 
 router.post('/', (req, res) => {
-
   return knex('client_answers')
   .insert(req.body)
   .returning('*').then((ins) => {
@@ -23,6 +22,7 @@ router.post('/', (req, res) => {
 router.get('/', (req, res, next) => {
   return knex('client_answers')
   .returning('*')
+  .join('questions', 'client_answers.questionID','questions.id')
   .then((answers) => {
 
     res.status(200).json(answers)
