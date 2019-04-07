@@ -9,10 +9,10 @@ var router = express.Router();
 
 
 router.post('/', (req, res) => {
+  console.log(req.body)
   return knex('client_answers')
   .insert(req.body)
   .returning('*').then((ins) => {
-    // console.log(ins[0])
     res.status(200).json(ins)
   })
 })
