@@ -8,7 +8,7 @@ var router = express.Router();
 
 
 
-router.post('/', (req, res) => {
+router.post('/', (req, res, next) => {
   console.log(req.body)
   return knex('client_answers')
   .insert(req.body)
