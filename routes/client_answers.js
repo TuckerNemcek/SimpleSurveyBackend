@@ -9,7 +9,6 @@ var router = express.Router();
 
 
 router.post('/', (req, res, next) => {
-res.setHeader('Access-Control-Allow-Origin', '*');
   return knex('client_answers')
   .insert(req.body)
   .returning('*').then((ins) => {
