@@ -10,7 +10,6 @@ var cors = require('cors')
 
 var app = express()
 
-app.use(cors())
 
 // app.get('/products/:id', function (req, res, next) {
 //   res.json({msg: 'This is CORS-enabled for all origins!'})
@@ -36,6 +35,7 @@ var client_answersRouter = require('./routes/client_answers');
 
 
 // view engine setup
+app.options('*', cors())
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
