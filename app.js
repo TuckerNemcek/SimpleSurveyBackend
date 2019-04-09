@@ -35,7 +35,7 @@ var client_answersRouter = require('./routes/client_answers');
 
 
 // view engine setup
-app.options('*', cors())
+app.options('*', cors({preflightContinue: true}))
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
