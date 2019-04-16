@@ -8,7 +8,6 @@ var app = express()
 var cors = require('cors')
 
 
-var app = express()
 
 
 // app.get('/products/:id', function (req, res, next) {
