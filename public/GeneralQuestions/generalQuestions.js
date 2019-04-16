@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let appendHere = document.getElementById('appendHere')
 
   function getgeneralQuestions() {
-    axios.get('https://simple-startup-survey-backend.herokuapp.com/questions/generalQuestions')
+    axios.get('http://localhost:3000/questions/generalQuestions')
       .then(function(response) {
         let questions = response.data
         questionArray = response.data
