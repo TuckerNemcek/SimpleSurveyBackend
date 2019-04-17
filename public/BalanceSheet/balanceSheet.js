@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
            }
          }
          storedData = storedData.concat(storedData2)
-         axios.post('https://simple-startup-survey-backend.herokuapp.com/client_answers', {crossDomain:true} storedData)
+         axios.post('https://simple-startup-survey-backend.herokuapp.com/client_answers', {crossDomain:true}, storedData)
          .then(function(response){
            console.log(response.data , ' save success')
            localStorage.setItem("storedData", JSON.stringify(storedData))
