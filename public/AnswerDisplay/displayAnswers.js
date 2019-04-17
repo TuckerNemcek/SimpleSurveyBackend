@@ -6,7 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let appendHere = document.getElementById('appendHere')
 
   function getdisplayAnswers() {
+<<<<<<< HEAD
     axios.get('http://https://simple-startup-survey-backend.herokuapp.com/client_answers')
+=======
+    axios.get('https://simple-startup-survey-backend.herokuapp.com/client_answers')
+>>>>>>> 125c5beca3b1606633f14fb4a587bf016564cbc4
       .then(function(response) {
         let answers = response.data
         questionArray = response.data
@@ -94,7 +98,11 @@ submitButton.onclick = function() {
     }
   }
 
+<<<<<<< HEAD
   axios.post('http://https://simple-startup-survey-backend.herokuapp.com/client_answers/', storedData)
+=======
+  axios.post('https://simple-startup-survey-backend.herokuapp.com/client_answers/', storedData)
+>>>>>>> 125c5beca3b1606633f14fb4a587bf016564cbc4
     .then(function(response) {
       console.log(response.data, ' save success')
     })

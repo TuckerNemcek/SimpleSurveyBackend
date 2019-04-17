@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   let appendHere = document.getElementById('appendHere')
 
   function getgeneralQuestions(){
-    axios.get('http://https://simple-startup-survey-backend.herokuapp.com/questions/balanceSheet')
+    axios.get('https://simple-startup-survey-backend.herokuapp.com/questions/balanceSheet')
     .then(function (response) {
       let questions = response.data
       questionArray = response.data
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
            }
          }
          storedData = storedData.concat(storedData2)
-         axios.post('http://https://simple-startup-survey-backend.herokuapp.com/client_answers', storedData)
+         axios.post('https://simple-startup-survey-backend.herokuapp.com/client_answers', storedData)
          .then(function(response){
            console.log(response.data , ' save success')
            localStorage.setItem("storedData", JSON.stringify(storedData))
@@ -87,7 +87,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //          return alert(`it appears you forgot to answer question number ${i + 1}. All questions must be complete in order to give you the best analysis`)
     //        }
     //      }
+<<<<<<< HEAD
     //      axios('http://https://simple-startup-survey-backend.herokuapp.com/client_answers',storedData, {crossDomain:true})
+=======
+    //      axios('https://simple-startup-survey-backend.herokuapp.com/client_answers',storedData, {crossDomain:true})
+>>>>>>> 125c5beca3b1606633f14fb4a587bf016564cbc4
     //      .then(function(response){
     //        console.log(response.data , ' save success')
     //        storedData = storedData.concat(storedData2)
