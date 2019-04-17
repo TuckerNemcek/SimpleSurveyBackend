@@ -87,11 +87,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //          return alert(`it appears you forgot to answer question number ${i + 1}. All questions must be complete in order to give you the best analysis`)
     //        }
     //      }
-<<<<<<< HEAD
-    //      axios('http://https://simple-startup-survey-backend.herokuapp.com/client_answers',storedData, {crossDomain:true})
-=======
-    //      axios('https://simple-startup-survey-backend.herokuapp.com/client_answers',storedData, {crossDomain:true})
->>>>>>> 125c5beca3b1606633f14fb4a587bf016564cbc4
+
     //      .then(function(response){
     //        console.log(response.data , ' save success')
     //        storedData = storedData.concat(storedData2)
