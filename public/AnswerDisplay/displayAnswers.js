@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let appendHere = document.getElementById('appendHere')
 
   function getdisplayAnswers() {
-    axios.get('http://localhost:3000/client_answers')
+    axios.get('http://https://simple-startup-survey-backend.herokuapp.com/client_answers')
       .then(function(response) {
         let answers = response.data
         questionArray = response.data
@@ -94,7 +94,7 @@ submitButton.onclick = function() {
     }
   }
 
-  axios.post('http://localhost:3000/client_answers/', storedData)
+  axios.post('http://https://simple-startup-survey-backend.herokuapp.com/client_answers/', storedData)
     .then(function(response) {
       console.log(response.data, ' save success')
     })
