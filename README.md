@@ -9,7 +9,20 @@ The app pulls the questions from a database to make it easier to update the ques
 ## How to use the site
 Simply click the link and then begin inputting your information.
 
+![Screenshot from 2019-08-13 18-31-42](https://user-images.githubusercontent.com/40895874/62986488-177bb380-bdf9-11e9-80ea-f632fa15ad21.png)
+
+Error handling will catch you if you miss a question
+![Screenshot from 2019-08-13 18-31-22](https://user-images.githubusercontent.com/40895874/62986447-e1d6ca80-bdf8-11e9-8794-756a0a447c95.png)
+
 Please have your Income Statement (P&L) and Balance Sheet ready to fill this survey.
+
+Continue to fill out your financial information
+
+![Screenshot from 2019-08-13 18-32-05](https://user-images.githubusercontent.com/40895874/62986533-42fe9e00-bdf9-11e9-9299-73655a61ebc1.png)
+
+Enjoy the financial analysis based on your inpu!. Each section has one of five responses based on your answers to the questions
+
+![Screenshot from 2019-08-13 18-32-36](https://user-images.githubusercontent.com/40895874/62986569-66294d80-bdf9-11e9-9c6d-eaeee4129cf2.png)
 
 After the fourth page is where you will see the check on how healthy your business is.
 
